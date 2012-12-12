@@ -149,8 +149,8 @@ HTML5 Number polyfill | Jonathan Stipe | https://github.com/jonstipe/number-poly
           $upBtn = $(upBtn);
           $downBtn = $(downBtn);
           btnContainer = document.createElement('div');
-          $upBtn.addClass('number-spin-btn number-spin-btn-up').css('height', halfHeight);
-          $downBtn.addClass('number-spin-btn number-spin-btn-down').css('height', halfHeight);
+          $upBtn.addClass('number-spin-btn number-spin-btn-up').css('height', halfHeight).text('+');
+          $downBtn.addClass('number-spin-btn number-spin-btn-down').css('height', halfHeight).text('-');
           btnContainer.appendChild(upBtn);
           btnContainer.appendChild(downBtn);
           $(btnContainer).addClass('number-spin-btn-container').insertAfter(elem);
